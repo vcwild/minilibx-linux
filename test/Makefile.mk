@@ -15,10 +15,10 @@ LFLAGS = -L.. -lmlx -L$(INCLIB) -lXext -lX11 -lm
 
 ifeq ($(UNAME), Darwin)
 	# mac
-	CC = clang
+	CC = gcc
 else ifeq ($(UNAME), FreeBSD)
 	# FreeBSD
-	CC = clang
+	CC = gcc
 else
 	#Linux and others...
 	CC	= gcc
